@@ -1,0 +1,296 @@
+#aboutusMain{
+    margin:40px;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+	color: rgb(31, 30, 30);
+}
+
+h2 {
+	font-size:30px;
+    text-align: left;
+}
+
+h3{
+	font-size: 10px;
+	text-align: left;
+	font-family: 200;
+}
+
+h4{
+	font-size:15px;
+    text-align: left;
+	font-weight: 300;
+}
+
+h5{
+	font-size:2px;
+    text-align: left;
+	font-weight: 500;
+	padding: 4px;
+}
+
+p {
+	font-size:20px;
+	color:rgb(49, 46, 46);
+	line-height:25px;
+    text-align: center;
+    padding: 15px;
+}
+
+strong{
+    color: rgb(250, 29, 29);
+	font-weight: 200;
+}
+
+.hr{
+    border:0.8px solid red;
+	/* width:15%; */
+    margin-left:40% !important; margin-right:40% !important;
+}
+
+.list li{
+    text-align: left ;
+	list-style:disc !important;
+	/* font-size: 100px; */
+}
+
+.row .image{
+	margin-top: 30px;
+	border-radius: 10px;
+	transition: all 2s ease-out;
+	
+}
+
+.image :hover{
+	width: 310px;
+	border-radius: 10px;
+	transition: all 2s ease-in-out;
+}
+
+#practiceMain{
+    margin:  40px;
+}
+
+#service {
+	text-align:center;
+	padding:2% 0%;
+}
+#features-sec {
+	padding: 100px 0;
+}
+#features-sec .media.service-box:first-child {
+	margin-top: 40px;
+}
+#services {
+	padding: 100px 0 75px;
+}
+
+.media.service-box {
+	margin: 25px 0;
+}
+.media.service-box .pull-left {
+	margin-right: 20px;
+	padding: 5px;
+}
+.media.service-box .pull-left > i {
+	font-size: 24px;
+	height: 64px;
+	line-height: 64px;
+	text-align: center;
+	width: 64px;
+	border-radius: 100%;
+	color: #e73131;
+	border:1px solid #d7d7d7;
+	transition: background-color 400ms, background-color 400ms;
+	position: relative;
+}
+.media.service-box:hover .pull-left > i {
+	background:#e73131;
+	color:#fff;
+	transform:rotateY(360deg);
+	-moz-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+	-webkittransform:rotate(360deg);
+	transition:all 0.5s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+}
+
+.media-body{
+	padding: 10px;
+}
+
+.media-body h4 {
+	font-weight:400;
+	text-align:left;
+    padding: 2px;
+}
+.media-body h5 {
+	font-weight: 200;
+	text-align:left;
+	padding: 2px;
+}
+
+.progbar{
+	color: #5e5454;
+	padding: 20px;
+	margin-right: 2%;
+}
+/* 
+#progbar1{
+	margin-top: 50px;
+	margin-left: 20%;
+} */
+
+#aptitudeMain {
+	margin:  30px;
+}
+
+.aptipara h5{
+	text-align: left;
+	font-weight: 300;
+	margin-left:10% !important; margin-right:10% !important;
+	
+}
+
+.aptiTab{
+	margin-left:10% !important; margin-right:10% !important;
+}
+
+#aptiMain{
+	margin-left:20% !important; margin-right:20% !important;
+}
+
+#dsaMain{
+	background-color: #ccc9c9;
+}
+
+.dsaClass{
+	padding: 20px;
+}
+
+.dsaClass.h5{
+	margin: 50px;
+	padding: 2%;
+}
+
+.quePine{
+	margin-left:45% !important; margin-right:45% !important;
+}
+
+/* #contactMain{
+	padding: 4px;
+} */
+
+.row .col-md-6 .h3{
+	font-size: 15px;
+	text-align: right;
+}
+
+.contact-form{
+	font-size: 15px;
+	list-style: none;
+	font-weight: 100;
+	padding: 0 10%
+}
+
+.form{
+	background-color: #ec7777;
+	margin: 50px 10%;
+	padding: 10px 10%;
+	border-radius: 7px;
+}
+
+.submit-btn
+{
+	margin-top: 20px;
+	
+
+}
+.social-container {
+	/* margin-left:33% !important; margin-right:33% !important; */
+	background: #ccc9c9;
+	margin: 30px 35vw;
+  }
+
+  a.social {
+	margin: 15px;
+	transition: transform 250ms;
+	display: inline-block;
+  }
+
+  a.social:hover {
+	transform: translateY(-10px);
+  }
+
+  a.youtube {
+	color: #eb3223;
+  }
+
+  a.youtube:hover{
+	color: #eb3223;
+  }
+  
+  a.facebook {
+	color: #4968ad;
+  }
+  a.facebook:hover {
+	color: #4968ad;
+  }
+  
+  a.google-plus {
+	color: red;
+  }
+  a.google-plus:hover {
+	color: red;
+  }
+  
+  a.instagram {
+	color: palevioletred;
+  }
+  a.instagram:hover {
+	color: palevioletred;
+  }
+
+
+  @media only screen  and (max-width: 500px)  {
+	.social-container {
+		/* margin-left:33% !important; margin-right:33% !important; */
+		/* background: #ccc9c9; */
+		margin: 10px 1vw;
+	} 
+	  
+	.quePine{
+		margin-left:30vw !important; margin-right:30vw !important;
+	}
+
+	.carousel {
+		height:60%;
+	}	
+
+	  
+}
+
+/* ---------------Animations----------------- */
+.progbar {
+	animation-duration: 1.5s;
+	animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+	from {
+	  margin-right:100%;
+	  width: 300%;
+	}
+  
+	to {
+	  margin-right: 0%;
+	  width: 100%;
+	}
+  }
+
+  

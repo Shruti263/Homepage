@@ -1,0 +1,10 @@
+.tables{
+    animation-name: example;
+    animation-duration: 4s;
+    transform: scale(2);
+}
+
+@keyframes example {
+    from {margin-left: 100vw;}
+    to {margin-left: 0vw;}
+  }

@@ -1,0 +1,93 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: rgb(247, 82, 82);
+}
+
+.navitems{
+    color: rgb(25, 25, 26) !important;
+    font-weight: 500;
+    font-size: 20px;
+}
+.navitems:hover{
+    border-radius: 40px;
+    color: white;
+}
+
+.carousel_caption  h1{
+    font-size: 60px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.carousel_caption h2 {
+	font-size:25px;
+    text-align: left;
+}
+
+.carousel_caption  h3 {
+	font-size:20px;
+	color:white;
+	/* line-height:25px; */
+    text-align: left;
+}
+
+.carousel_image{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.9;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+
+.carousel_caption{
+    transform: translateY(-50%);
+    /* bottom: initial; */
+    top: 55%;
+}
+
+#aboutUSMain{
+    margin-top: 20px;
+}
+
+#practiceMain{
+    padding-top: 30px;
+}
+
+#aptitudeMain{
+    padding-top: 30px;
+}
+#dsaMain{
+    padding-top: 30px;
+}
+
+#contactMain{
+    padding-top: 40px;
+}
+
+@media only screen  and (max-width: 900px){
+    .carousel_image{
+        width: 100vw;
+        height: 70vh;
+        object-fit: cover;
+        opacity: 0.9;
+    }
+}
+
+.carousel_caption h1{
+	animation-duration: 3s;
+	animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+	from {
+	  visibility: 0%;
+	}
+  
+	to {
+	  visibility: 100%;
+	}
+  }

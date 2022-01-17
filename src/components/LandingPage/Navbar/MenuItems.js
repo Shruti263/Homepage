@@ -1,17 +1,17 @@
 export const MenuItems = [
     {
         title:"Home",
-        link: "/home",
+        link: "/",
         cName: "nav-links",
     },
     {
         title:"Interview Preperation",
-        link: "/home1",
+        link: "/interviewprep",
         cName: "nav-links",
     },
     {
         title:"Placement History",
-        link: "/home2",
+        link: "/statastics",
         cName: "nav-links",
     },
     {
@@ -21,7 +21,7 @@ export const MenuItems = [
     },
     {
         title:"Admin Login",
-        link: "/home4",
+        link: "/admin",
         cName: "nav-links",
     }
 ]

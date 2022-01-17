@@ -1,0 +1,43 @@
+.wrapper{
+    padding: 20px;
+    height: 10vh;
+    width: 100vw;
+    top: 0;
+    background: radial-gradient(circle, rgb(24, 8, 83) 0%, rgba(24,8,83) 97%);
+}
+
+.wrapper .list{
+    padding: 10px;
+    text-align: right;
+    background-color: black;
+    margin-left: 60vw;
+    border-radius: 5px;
+    top: 0;
+}
+
+.wrapper.list  li Link{
+    color: rgb(153, 21, 82);
+    text-decoration: none;
+    font-size: 18px;
+    padding:  15px 0px;
+    border-radius: 6px;
+}
+
+
+ul{
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    margin: 5px 0px;
+}
+
+ul li Link{
+    color: aliceblue;
+    /* text-decoration: none; */
+    font-size: 18px;
+    display: inline;
+    /* padding:  15px 0px; */
+    border-radius: 6px;
+}
