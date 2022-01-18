@@ -28,7 +28,6 @@ export default function Drawer() {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-        <Response/>
     </div>
  );
 }

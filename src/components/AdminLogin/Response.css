@@ -1,3 +1,27 @@
 .table{
-    padding: 10vh 15px;
+    padding: 11vh 15px;
+}
+
+#form{
+    margin: 10vh;
+    padding-top: 50px ;
+    background-color: rgb(204, 201, 201);
+}
+
+.formfield{
+    padding: 20px;
+}
+
+#name , #email {
+    height: 35px;
+    border-color: black;
+}
+ #message{
+     width: 50vw;
+     height: 50px;
+     border-color: black;
+ }
+
+#submitbutton{
+    margin: 20px;
 }

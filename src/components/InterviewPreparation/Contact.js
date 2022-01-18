@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import {Form,Row,Col} from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
+import ContactForm from './ContactForm';
 import './AboutUs.css';
 
 function Contact() {
+    const [status, setStatus] = useState("Submit form");
     const [form,setForm]=useState({
         nm:'',
         email:'',
         subject:'',
         message:'',
-    }
-    );
+    });
 
     // These methods will update the state properties.
     function updateForm(value) {
@@ -18,24 +18,29 @@ function Contact() {
         return { ...prev, ...value };
         });
     }
-
-    async function onSubmit(e){
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        const newResponse = {...form};
-        await fetch("http://localhost:5000/formresponse",{
-            method:"POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(newResponse),
-        }).catch(error => {
-            window.alert(error);
-            return;
-          });
-
-          alert('Your response sent successfully, kindly wait for reply!!')
-          setForm({ nm: "", email: "",subject:"",message:""});
-    }
+        setStatus("Sending...");
+        let details = {
+          name: form.nm,
+          subject: form.subject,
+          email: form.email,
+          message: form.message,
+        };
+        let response = await fetch("http://localhost:5000/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json;charset=utf-8",
+          },
+          body: JSON.stringify(details),
+        });
+        setStatus("Submit");
+        let result = await response.json();
+        alert(result.status);
+        // let result = await response.json();
+        // alert(result.status);
+        setForm({ nm: "", email: "",subject:"",message:""});
+      };
 
     const SocialMedia=[
         {
@@ -86,22 +91,6 @@ function Contact() {
                         <i className="fas fa-globe fa-2x" style={{color:"rgb(247, 82, 82)"}}></i><h6>Website: <a href="http://www.walchandsangli.ac.in/">http://www.walchandsangli.ac.in/</a> </h6>
                     </li>
                 </ul>
-                <div className='form ' onSubmit={onSubmit}>
-                    <h3>For any queries,contact us</h3>
-                    <div className='col-md-6'>
-                        <label className="form-label">Name</label>
-                        <input className="form-control" id="inputName" type="text" placeholder="Enter your name" onChange={(e)=>updateForm({nm: e.target.value})}/>
-                    </div>
-                    <div className='col-md-6'>
-                        <label className="form-label">Email address</label>
-                        <input type="email" className="form-control" id="inputEmail" placeholder="name@example.com"  onChange={(e)=>updateForm({email: e.target.value})}></input>
-                    </div>   
-                    <label className="form-label">Subject</label>
-                    <input className="form-control"  id="inputSubject" type="text" placeholder="Enter subject"  onChange={(e)=>updateForm({subject: e.target.value})}/>
-                    <label className="form-label">Message</label>
-                    <textarea className="form-control" id="inputDetail" rows="3" placeholder='Enter your message'  onChange={(e)=>updateForm({message: e.target.value})}></textarea>
-                    <Button variant="danger" type="submit" className='submit-btn' onClick={ onSubmit}> Submit</Button> 
-                </div>                           
         </div>
 
         <h1 >Follow us on</h1>

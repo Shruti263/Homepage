@@ -16,6 +16,7 @@ import Calender from './components/AdminLogin/Calender';
 import Maincontent from './components/LandingPage/Maincontent';
 import Response from './components/AdminLogin/Response';
 import ContactForm from './components/AdminLogin/Email';
+import Login from './components/AdminLogin/Login';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <div className='App'>
         <Routes>
           <Route exact path='/' element={<Navbar />}></Route>
+          <Route exact path='/adminlogin' element={<Login/>}></Route>
           <Route exact path='/statastics' element={<Placement/>}> </Route>
           <Route exact path='/interviewprep' element={<NavbarTop/>}></Route>
           <Route exact path='/calender' element={<Calender/>}></Route>
@@ -32,7 +34,7 @@ function App() {
           <Route exact path="/recordList" element={<RecordList />}/>
           <Route exact path="/home" element={<Maincontent/>}></Route>
           <Route exact path='/formRes' element={<Response/>}></Route>
-          <Route exact path='/sendrply' element={<ContactForm/>}></Route>
+          <Route exact path='/sendreply/:id' element={<ContactForm/>}></Route>
         </Routes>       
       </div>
     </Router>

@@ -21,7 +21,7 @@ export const MenuItems = [
     },
     {
         title:"Admin Login",
-        link: "/admin",
+        link: "/calender",
         cName: "nav-links",
     }
 ]
